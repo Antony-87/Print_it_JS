@@ -1,0 +1,181 @@
+/* variables declaration */
+:root {
+	--primary-color: #3396C0;
+	--secondary-color: #CD006B;
+	--third-color: #EEE325;
+}
+
+/* Reset CSS */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+
+}
+section {
+	margin-block: 6em;
+}
+h2 {
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+	margin-block: 1em;
+}
+h3{
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 22px;
+	font-weight: 900;
+	margin-block: 1em;
+}
+
+p, li {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+}
+.container {
+	max-width: 1440px;
+	margin-inline:auto;
+	padding-inline: 5%;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	width: 260px;
+	margin-block: 10px;
+}
+
+.btn {
+	background-color: var(--primary-color) ;
+	padding: 16px 32px;
+	margin-inline:5px;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+}
+.devis {
+	background-color: var(--secondary-color);
+}
+
+#banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 470px;
+	position: relative;
+}
+.banner-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
+/* Gestion des fleches du carrousel */
+#banner .arrow {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Ajuste la taille selon tes besoins */
+    height: auto;
+    cursor: pointer;
+}
+#banner .arrow_left {
+	left: 10px;
+}
+#banner .arrow_right {
+	right: 10px;
+}
+/* Gestion des points du carrousel */
+.dots {
+	position: absolute;
+ 	z-index: 10; /* S'assurer que les bullets apparaissent au-dessus des autres éléments */
+	bottom: 40px;
+	display: flex;
+	justify-content: center;
+	width: 100%; /* Centrer les bullets */
+}
+.dot {
+	margin-inline: 5px;
+	width: 13px;
+	height: 13px;
+	background-color: #ffffff00; /* transparence */
+	border: 3px solid #fff;
+	border-radius: 100%;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
+	cursor: pointer; /* pour montrer qu'on peut cliquer dessus */
+}
+.dot_selected {
+	background-color: #fff; /* remplir le point selectionné */
+}
+
+/* Fin du code CSS pour le carousel */
+
+#banner p {
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 66px;
+	color: white;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	text-align: center;
+}
+#banner span {
+	display: block;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+/* Autres styles... */
